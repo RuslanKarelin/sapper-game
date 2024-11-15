@@ -1,0 +1,112 @@
+.sapper-app {
+    display: table;
+    margin: 50px auto;
+}
+
+.sapper-box__panel {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.sapper-box__row {
+    display: flex;
+}
+
+.sapper-box__panel-mine, .sapper-box__panel-flag {
+    color: #5f806a;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sapper-box__panel-mine::before {
+    display: block;
+    content: '';
+    background-image: url('./images/mine.svg');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+}
+
+.sapper-box__panel-flag::before {
+    display: block;
+    content: '';
+    background-image: url('./images/flag2.svg');
+    background-repeat: no-repeat;
+    background-size: 56%;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+}
+
+.sapper-box__ceil {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #5f806a;
+    margin: 3px;
+    border-radius: 3px;
+    padding: 2px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.sapper-box__ceil-inner {
+    background-color: #5f806a;
+    width: inherit;
+    height: inherit;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5f806a;
+}
+
+.sapper-box__ceil-opened {
+    background-color: transparent;
+}
+
+.sapper-box__ceil-with-flag {
+    background-image: url('./images/flag.svg');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+.sapper-box__ceil-with-mine {
+    background-image: url('./images/mine.svg');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+.sapper-box__start-button {
+    display: none;
+    background-color: #5f806a;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 20px 3px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+
+.sapper-box__start-button--show {
+    display: block;
+}
+
+.sapper-box__message {
+    color: #5f806a;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+
+.sapper-box__message--show {
+    display: block;
+    margin: 20px 3px 0;
+}
