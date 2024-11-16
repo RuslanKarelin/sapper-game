@@ -18,6 +18,12 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .sapper-box__panel-mine::before {
@@ -29,6 +35,26 @@
     background-position: center;
     width: 25px;
     height: 25px;
+}
+
+.sapper-box__toogle-click-mode {
+    background-image: url('./images/flag2.svg');
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    padding: 2px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border: 1px solid #5f806a;
+    margin-left: 36px;
+    cursor: pointer;
+}
+
+.sapper-box__toogle-click-mode--active {
+    background-image: url('./images/flag.svg');
+    background-color: #5f806a;
 }
 
 .sapper-box__panel-flag::before {
@@ -61,10 +87,18 @@
     align-items: center;
     justify-content: center;
     color: #5f806a;
+    cursor: pointer;
 }
 
 .sapper-box__ceil-opened {
     background-color: transparent;
+    cursor: initial;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .sapper-box__ceil-with-flag {
